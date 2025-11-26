@@ -211,7 +211,9 @@ cflags_base = [
     "-str reuse",
     "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
     "-i include",
+    "-i include/stdlib",
     f"-i build/{config.version}/include",
+    "-DREVOLUTION",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
 ]
